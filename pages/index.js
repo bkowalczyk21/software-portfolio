@@ -20,7 +20,7 @@ export default function Index({ posts, globalData }) {
           {globalData.blogTitle}
         </h1>
         <img src="/static/vybe.png"/>
-        <Image src={vybePic} alt="Vybe" />
+        <Image src="/static/vybe.png" alt="Vybe" />
         <ul className="w-full">
           {posts.map((post) => (
             <li
