@@ -62,8 +62,7 @@ export default function PostPage({
         <main>
           <article className="prose dark:prose-dark">
             <MDXRemote {...source} components={components} />
-            <Image src={vybePic} alt="Vybe"/>
-            <img src="/static/vybe.png"/>
+            <img src={frontMatter.image}/>
           </article>
         </main>
         <div className="grid md:grid-cols-2 lg:-mx-24 mt-12">
