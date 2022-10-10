@@ -7,6 +7,8 @@ import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import Image from 'next/image'
+import vybePic from '../public/static/vybe.png';
 
 export default function Index({ posts, globalData }) {
   return (
@@ -18,6 +20,7 @@ export default function Index({ posts, globalData }) {
           {globalData.blogTitle}
         </h1>
         <img src="/static/vybe.png"/>
+        <Image src={vybePic} alt="Vybe" />
         <ul className="w-full">
           {posts.map((post) => (
             <li

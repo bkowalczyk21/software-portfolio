@@ -17,6 +17,7 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Layout, { GradientBackground } from '../../components/Layout';
 import SEO from '../../components/SEO';
+import vybePic from '../../public/static/vybe.png';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -61,7 +62,7 @@ export default function PostPage({
         <main>
           <article className="prose dark:prose-dark">
             <MDXRemote {...source} components={components} />
-            <Image src='/static/vybe.png' alt="vybe" width="350px" height="300px"/>
+            <Image src={vybePic} alt="Vybe"/>
             <img src="/static/vybe.png"/>
           </article>
         </main>
