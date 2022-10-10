@@ -7,8 +7,6 @@ import {
 } from '../../utils/mdx-utils';
 
 import { MDXRemote } from 'next-mdx-remote';
-//import { MDXProvider } from '@mdx-js/react';
-import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import ArrowIcon from '../../components/ArrowIcon';
@@ -17,19 +15,14 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Layout, { GradientBackground } from '../../components/Layout';
 import SEO from '../../components/SEO';
-import vybePic from '../../public/static/vybe.png';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
 // to handle import statements. Instead, you must include components in scope
 // here.
-const ResponsiveImage = () => (
-  <Image src='Assets/IMG_3518.PNG' alt="Picture" width="350px" height="300px"/>
-)
 
 const components = {
   a: CustomLink,
-  img: ResponsiveImage,
   // It also works with dynamically-imported components, which is especially
   // useful for conditionally loading components for certain routes.
   // See the notes in README.md for more details.
@@ -62,7 +55,9 @@ export default function PostPage({
         <main>
           <article className="prose dark:prose-dark">
             <MDXRemote {...source} components={components} />
-            <img src={frontMatter.image}/>
+            <img src={frontMatter.image1}/>
+            <img src={frontMatter.image2}/>
+            <img src={frontMatter.image3}/>
           </article>
         </main>
         <div className="grid md:grid-cols-2 lg:-mx-24 mt-12">
