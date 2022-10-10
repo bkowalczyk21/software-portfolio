@@ -61,7 +61,7 @@ export default function PostPage({
         <main>
           <article className="prose dark:prose-dark">
             <MDXRemote {...source} components={components} />
-            <Image src='/vybe.png' alt="vybe" width="350px" height="300px"/>
+            <Image src='/static/vybe.png' alt="vybe" width="350px" height="300px"/>
             <img src="/static/vybe.png"/>
           </article>
         </main>
