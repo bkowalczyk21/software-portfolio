@@ -7,6 +7,8 @@ import {
 } from '../../utils/mdx-utils';
 
 import { MDXRemote } from 'next-mdx-remote';
+//import { MDXProvider } from '@mdx-js/react';
+import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import ArrowIcon from '../../components/ArrowIcon';
@@ -20,8 +22,13 @@ import SEO from '../../components/SEO';
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
 // to handle import statements. Instead, you must include components in scope
 // here.
+const ResponsiveImage = () => (
+  <Image src='Assets/IMG_3518.PNG' alt="Picture" width="350px" height="300px"/>
+)
+
 const components = {
   a: CustomLink,
+  img: ResponsiveImage,
   // It also works with dynamically-imported components, which is especially
   // useful for conditionally loading components for certain routes.
   // See the notes in README.md for more details.
