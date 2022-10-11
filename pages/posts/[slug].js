@@ -56,9 +56,9 @@ export default function PostPage({
           <article className="prose dark:prose-dark">
             <MDXRemote {...source} components={components} />
             <div className='grid md:grid-cols-3 lg:-mx-8 mt-12'>
-              <img src={frontMatter.image1} height="300" width="200" />
-              <img src={frontMatter.image2} height="300" width="200" />
-              <img src={frontMatter.image2} height="300" width="200" />
+              <img src={frontMatter.image1} height="300" />
+              <img src={frontMatter.image2} height="300" />
+              <img src={frontMatter.image3} height="300" />
             </div>
           </article>
         </main>
