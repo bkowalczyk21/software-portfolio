@@ -57,11 +57,7 @@ export default function PostPage({
             <MDXRemote {...source} components={components} />
             <div className='grid md:grid-cols-2 lg:-mx-24 mt-12'>
               <img src={frontMatter.image1} height="300" width="200" />
-            </div>
-            <div className='grid md:grid-cols-2 lg:-mx-24 mt-12'>
               <img src={frontMatter.image2} height="300" width="200" />
-            </div>
-            <div className='grid md:grid-cols-2 lg:-mx-24 mt-12'>
               <img src={frontMatter.image2} height="300" width="200" />
             </div>
           </article>
